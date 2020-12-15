@@ -1,0 +1,491 @@
+.q1 {
+    background-color: pink;
+}
+
+/* ========= header =============*/
+/* что-то рапботает 
+.logo {
+    width: 155px;
+    height: 55px; 
+}
+ что-то рапботает */
+
+.header-inner {
+   padding-top: 20px;
+   padding-bottom: 300px;
+   height: 50vh;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   
+
+       width: 600px;
+    background: white;
+
+    
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        li {
+            padding-left: 50px;
+            
+
+            a {
+                color: #989696;
+                font-size: 13px;          
+                text-decoration: none;
+              
+            &:hover {
+                    color: black;
+                }
+            &:active {
+                    color: red;
+
+                    
+                }
+                
+            }
+        }
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 270px;
+        justify-content: center;
+      
+    }
+
+    &__title {
+        font-size: 44px;
+        font-weight: 17px;
+        color: #1d1e1f;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 17px;
+        color: #898888;
+        padding-bottom: 50px;
+    }
+
+    &__button {
+        border: 1px solid;
+        height: 57px;
+        width: 188px;
+        position: relative;
+
+        &__text {
+        position: absolute;
+        top: 35%;
+        font-size: 13px;
+        font-weight: 17px;
+        color: #000000;
+        padding-left: 60px;
+        
+        }
+    }
+    
+}
+
+/* ========= / header =============*/
+
+/* ========== history ============= */
+.line {
+border-left: 5px solid white;  
+margin-left: 200px; 
+
+}
+
+.history {
+    
+}
+.history-inner {
+    display: flex;
+    justify-content: center;
+    flex-basis: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-direction: row;    
+    background-color: black;
+    background-image: url(/img/bgr_white.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 1920px;
+
+
+
+    &-nechet {
+        width: 400px;
+        padding-top: 30px;
+        padding-right: 75px;
+        border-right: 5px solid white; 
+        position: relative; 
+        z-index: 5;
+        
+
+        &__2011 {
+            height: 300px;
+
+            &__year {
+                text-align: right;
+                color: white;
+                font-size: 48px;
+                font-weight: 26px;
+
+            }
+            &__text {
+                color: #b7b7b7;
+                font-size: 15px;
+                font-weight: 22px;
+            }
+            &__circle {
+                width: 1em;
+                height: 1em;
+                border: 3px solid white;
+                border-radius: 50%;
+                position: absolute;
+                margin-top: -85px;
+                margin-left: 466px;
+                z-index: 1;
+                background: black;
+            }
+        }
+        &__2013 {
+            &__year {
+                text-align: right;
+                color: white;
+                font-size: 48px;
+                font-weight: 26px;
+            }
+            &__text {
+                color: #b7b7b7;
+                font-size: 15px;
+                font-weight: 22px;
+                
+            }
+            &__circle {
+                width: 2em;
+                height: 2em;
+                border: 5px solid white;
+                border-radius: 50%;
+                position: absolute;
+                margin-top: -95px;
+                margin-left: 457px;
+                z-index: 1;
+                background: black;
+            }
+        }
+    }
+
+    &-chet {
+        width: 400px;
+        padding-top: 150px;
+        padding-left: 75px;
+        z-index: 5;
+        &__2012 {
+            height: 300px;
+            &__year {
+                color: white;
+                font-size: 48px;
+                font-weight: 26px;
+            }
+            &__text {
+                color: #b7b7b7;
+                font-size: 15px;
+                font-weight: 22px;
+            }
+            &__circle {
+                width: 1em;
+                height: 1em;
+                border: 3px solid white;
+                border-radius: 50%;
+                position: absolute;
+                margin-top: -85px;
+                margin-left: -87px;
+                z-index: 1;
+                background: black;
+            }
+        }
+        &__2014 {
+            &__year {
+                color: white;
+                font-size: 48px;
+                font-weight: 26px;
+            }
+            &__text {
+                color: #b7b7b7;
+                font-size: 15px;
+                font-weight: 22px;
+            }
+            &__circle {
+                width: 1em;
+                height: 1em;
+                border: 3px solid white;
+                border-radius: 50%;
+                position: absolute;
+                margin-top: -85px;
+                margin-left: -87px;
+                z-index: 1;
+                background: black;
+            }
+        }
+    }
+}
+
+/* ========== / history ============= */
+
+/* ========== team ============= */
+.team-items {
+    height: 750px;
+    width: 1920px;
+    text-align: center;
+    margin-left: auto;
+     margin-right: auto;
+}
+
+.team-items_header {
+text-align: center;
+margin-top: 150px;
+margin-bottom: 120px;
+
+    &__title {
+        font-size: 34px;
+        font-weight: 26px;
+        color: #1d1e1f;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 26px;
+        color: #898888;
+    }
+}
+
+.team-items-flex {
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    
+    &__1{
+        margin: 100px 200px 0 0;
+        &__foto {
+            text-align: center;
+        }
+        &__name {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 26px;
+            color: #464646;
+        }
+        &__text {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 26px;
+            color: #b3b3b3;
+        }
+        
+        &__connect {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            &__twit {}
+            &__inst {
+                padding-left: 15px;
+            }
+        }
+    }
+    &__2{
+        align-self: baseline;
+        &__foto {}
+        &__name {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 26px;
+            color: #464646;
+        }
+        &__text {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 26px;
+            color: #b3b3b3;
+        }
+        &__connect {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            &__twit {}
+            &__inst {
+                padding-left: 15px;
+            }
+        }
+    }
+    &__3{
+        margin: 100px 0 0 200px;
+        &__foto {}
+        &__name {
+            text-align: center;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 26px;
+            color: #464646;
+        }
+        &__text {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 26px;
+            color: #b3b3b3;
+        }
+        &__connect {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            &__twit {}
+            &__inst {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+/* ========== / team ============= */
+
+/* ========== provid ============= */
+.provid {
+    background-image: url(/img/bgr_provid.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    max-width: 1920px;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+.provid_title {
+    text-align: center;
+    padding-top: 250px;
+    &__title {
+        font-size: 34px;
+        font-weight: 26px;
+        color: white;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 26px;
+        color: #777777;
+    }
+}
+
+.provid_flex {
+   padding-top: 200px;
+    width: 1920px;    
+    display: flex;
+    justify-content: center;
+    
+    border: 5px solid pink;
+    &_items-1 {
+      /*  margin-right: 100px;*/
+        width: 340px;
+        text-align: center; 
+
+        &-circle {
+            height: 130px;
+            width: 130px;
+            border: 6px solid white;
+            border-radius: 50%;
+        }
+        
+        &-logo {
+            text-align: center;
+            padding-top: 40px;
+        }
+        &-title {
+            color: white;
+            font-size: 26px;
+            font-weight: 26px;
+        }
+        &-text {
+            font-size: 18px;
+            font-weight: 23px;
+            color: #383838;
+        }
+    }
+    &_items-2 {
+       /* margin: 100px;*/
+        width: 340px;
+        text-align: center;  
+        margin: 0 60px 0 60px;
+
+        &-circle {
+            height: 130px;
+            width: 130px;
+            border: 6px solid white;
+            border-radius: 50%;
+        }
+        &-logo {
+            text-align: center;
+            padding-top: 40px;
+        }
+        &-title {
+            font-size: 26px;
+            font-weight: 26px;
+            color: white;
+        }
+        &-text {
+            font-size: 18px;
+            font-weight: 23px;
+            color: #383838;
+        }
+    }
+    &_items-3 {
+        width: 340px;
+        text-align: center;
+        &-circle {
+            height: 130px;
+            width: 130px;
+            border: 6px solid white;
+            border-radius: 50%;
+        }
+        &-logo {
+            text-align: center;
+            padding-top: 40px;
+        }
+        &-title {
+            font-size: 26px;
+            font-weight: 26px;
+            color: white;
+        }
+        &-text {
+            font-size: 18px;
+            font-weight: 23px;
+            color: #383838;
+        }
+    }
+.provid_btn {
+    height: 60px;
+        width: 220px;
+        background-color: rgb(103, 228, 31);
+    text-align: center;
+    &_btn {
+        height: 60px;
+        width: 220px;
+        background-color: rgb(103, 228, 31);
+    }
+    &_text {
+            font-size: 160px;
+            font-weight: 260px;
+            color: rgb(223, 27, 180);
+    }
+}
+
+}
+
+/* ========== / provid ============= */
