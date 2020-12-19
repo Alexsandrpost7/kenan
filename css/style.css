@@ -292,14 +292,17 @@
     /*  margin-right: 100px;*/
     width: 340px;
     text-align: center; }
-    .provid_flex_items-1-circle {
-      height: 130px;
-      width: 130px;
-      border: 6px solid white;
-      border-radius: 50%; }
-    .provid_flex_items-1-logo {
-      text-align: center;
-      padding-top: 40px; }
+    .provid_flex_items-1-cover {
+      display: flex;
+      justify-content: center; }
+      .provid_flex_items-1-cover-circle {
+        height: 130px;
+        width: 130px;
+        border: 6px solid white;
+        border-radius: 50%; }
+      .provid_flex_items-1-cover-logo {
+        text-align: center;
+        padding-top: 40px; }
     .provid_flex_items-1-title {
       color: white;
       font-size: 26px;
@@ -312,15 +315,18 @@
     /* margin: 100px;*/
     width: 340px;
     text-align: center;
-    margin: 0 60px 0 60px; }
-    .provid_flex_items-2-circle {
-      height: 130px;
-      width: 130px;
-      border: 6px solid white;
-      border-radius: 50%; }
-    .provid_flex_items-2-logo {
-      text-align: center;
-      padding-top: 40px; }
+    margin: 0 40px 0 40px; }
+    .provid_flex_items-2-cover {
+      display: flex;
+      justify-content: center; }
+      .provid_flex_items-2-cover-circle {
+        height: 130px;
+        width: 130px;
+        border: 6px solid white;
+        border-radius: 50%; }
+      .provid_flex_items-2-cover-logo {
+        text-align: center;
+        padding-top: 40px; }
     .provid_flex_items-2-title {
       font-size: 26px;
       font-weight: 26px;
@@ -332,14 +338,17 @@
   .provid_flex_items-3 {
     width: 340px;
     text-align: center; }
-    .provid_flex_items-3-circle {
-      height: 130px;
-      width: 130px;
-      border: 6px solid white;
-      border-radius: 50%; }
-    .provid_flex_items-3-logo {
-      text-align: center;
-      padding-top: 40px; }
+    .provid_flex_items-3-cover {
+      display: flex;
+      justify-content: center; }
+      .provid_flex_items-3-cover-circle {
+        height: 130px;
+        width: 130px;
+        border: 6px solid white;
+        border-radius: 50%; }
+      .provid_flex_items-3-cover-logo {
+        text-align: center;
+        padding-top: 40px; }
     .provid_flex_items-3-title {
       font-size: 26px;
       font-weight: 26px;

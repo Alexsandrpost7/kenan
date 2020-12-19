@@ -391,49 +391,65 @@ margin-bottom: 120px;
     justify-content: center;
     
     border: 5px solid pink;
-    &_items-1 {
-      /*  margin-right: 100px;*/
-        width: 340px;
-        text-align: center; 
 
-        &-circle {
-            height: 130px;
-            width: 130px;
-            border: 6px solid white;
-            border-radius: 50%;
+        &_items-1 {
+        /*  margin-right: 100px;*/
+            width: 340px;
+            text-align: center; 
+
+            &-cover {
+                
+                display: flex;
+                justify-content: center;
+
+                &-circle {
+                    height: 130px;
+                    width: 130px;
+                    border: 6px solid white;
+                    border-radius: 50%;
+                }
+                
+                &-logo {
+                    text-align: center;
+                    padding-top: 40px;
+                }
+            }
+
+            &-title {
+                color: white;
+                font-size: 26px;
+                font-weight: 26px;
+            }
+            &-text {
+                font-size: 18px;
+                font-weight: 23px;
+                color: #383838;
+            }
+                
         }
-        
-        &-logo {
-            text-align: center;
-            padding-top: 40px;
-        }
-        &-title {
-            color: white;
-            font-size: 26px;
-            font-weight: 26px;
-        }
-        &-text {
-            font-size: 18px;
-            font-weight: 23px;
-            color: #383838;
-        }
-    }
     &_items-2 {
        /* margin: 100px;*/
         width: 340px;
         text-align: center;  
-        margin: 0 60px 0 60px;
+        margin: 0 40px 0 40px;
 
-        &-circle {
-            height: 130px;
-            width: 130px;
-            border: 6px solid white;
-            border-radius: 50%;
+        &-cover {
+                
+            display: flex;
+            justify-content: center;
+
+            &-circle {
+                height: 130px;
+                width: 130px;
+                border: 6px solid white;
+                border-radius: 50%;
+            }
+            &-logo {
+                text-align: center;
+                padding-top: 40px;
+            }
         }
-        &-logo {
-            text-align: center;
-            padding-top: 40px;
-        }
+
         &-title {
             font-size: 26px;
             font-weight: 26px;
@@ -448,16 +464,25 @@ margin-bottom: 120px;
     &_items-3 {
         width: 340px;
         text-align: center;
-        &-circle {
-            height: 130px;
-            width: 130px;
-            border: 6px solid white;
-            border-radius: 50%;
+      
+        &-cover {
+                
+            display: flex;
+            justify-content: center;
+
+            &-circle {
+                height: 130px;
+                width: 130px;
+                border: 6px solid white;
+                border-radius: 50%;
+            }
+            
+            &-logo {
+                text-align: center;
+                padding-top: 40px;
+            }
         }
-        &-logo {
-            text-align: center;
-            padding-top: 40px;
-        }
+
         &-title {
             font-size: 26px;
             font-weight: 26px;
