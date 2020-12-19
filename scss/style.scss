@@ -363,10 +363,12 @@ margin-bottom: 120px;
 .provid {
     background-image: url(/img/bgr_provid.png);
     background-repeat: no-repeat;
-    height: 800px;
+    height: 1800px;
     max-width: 1920px;
-   margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
+    width: 1920px;
+
 }
 
 .provid_title {
@@ -381,6 +383,7 @@ margin-bottom: 120px;
         font-size: 16px;
         font-weight: 26px;
         color: #777777;
+        padding-top: 10px;
     }
 }
 
@@ -393,7 +396,6 @@ margin-bottom: 120px;
     border: 5px solid pink;
 
         &_items-1 {
-        /*  margin-right: 100px;*/
             width: 340px;
             text-align: center; 
 
@@ -419,16 +421,17 @@ margin-bottom: 120px;
                 color: white;
                 font-size: 26px;
                 font-weight: 26px;
+                padding-top: 20px;
             }
             &-text {
                 font-size: 18px;
                 font-weight: 23px;
                 color: #383838;
+                padding-top: 15px;
             }
                 
         }
     &_items-2 {
-       /* margin: 100px;*/
         width: 340px;
         text-align: center;  
         margin: 0 40px 0 40px;
@@ -454,11 +457,13 @@ margin-bottom: 120px;
             font-size: 26px;
             font-weight: 26px;
             color: white;
+            padding-top: 20px;
         }
         &-text {
             font-size: 18px;
             font-weight: 23px;
             color: #383838;
+            padding-top: 15px;
         }
     }
     &_items-3 {
@@ -487,30 +492,181 @@ margin-bottom: 120px;
             font-size: 26px;
             font-weight: 26px;
             color: white;
+            padding-top: 20px;
         }
         &-text {
             font-size: 18px;
             font-weight: 23px;
             color: #383838;
+            padding-top: 15px;
         }
     }
+}
 .provid_btn {
-    height: 60px;
-        width: 220px;
-        background-color: rgb(103, 228, 31);
-    text-align: center;
-    &_btn {
         height: 60px;
         width: 220px;
-        background-color: rgb(103, 228, 31);
+        background-color: white;
+        text-align: center;
+        margin-top: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    &_btn {
+    
     }
-    &_text {
-            font-size: 160px;
-            font-weight: 260px;
-            color: rgb(223, 27, 180);
-    }
-}
 
+    &_text {
+        font-size: 16px;
+        font-weight: 26px;
+        font-weight: bold;
+        color: black;
+        padding-top: 23px;
+    }
 }
 
 /* ========== / provid ============= */
+
+/* ========== contact ==============*/
+.contact {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &_title {
+        font-size: 34px;
+        font-weight: 26px;
+    }
+    &_description {
+        font-size: 16px;
+        font-weight: 26px;
+        color: #898888;
+    }
+
+  .contact_flex{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-1{
+        height: 50px;
+        &_img {}
+        &_text { 
+            font-size: 12px;
+            font-weight: 26px;
+            color: #898888;
+            padding-top: 10px;
+        }
+    }
+
+    &-2{
+        height: 50px;
+        &_img {}
+        &_text {
+            font-size: 12px;
+            font-weight: 26px;
+            color: #898888;
+            padding: 0 150px 0 150px;
+            padding-top: 10px;
+        }
+    }
+
+    &-3{
+        height: 50px;
+        &_img {}
+        &_text {
+            font-size: 12px;
+            font-weight: 26px;
+            color: #898888;
+            padding-top: 10px;
+        }
+    }
+  }  
+}
+
+/* ========== / contact ==============*/
+
+/* ========== feedback ============== */
+
+/* это flex все разные!!!
+.feedback_form {
+    padding-top: 200px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-name {
+        &::placeholder {
+            color: #898888;
+        }
+    }
+    &-email {}
+    &-number {}
+    &-description {}
+    &-btn {}
+}
+*/
+
+.feedback_form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 26px;
+
+   
+    &-input {
+      
+        padding: 10px 0 10px 0;
+        width: 1920px;
+        border: 1px solid #898888;
+
+        input {
+            border: none;
+            text-align: center;
+            padding: 10px 0 10px 0;
+            width: 1920px;
+            outline: none;
+        }
+
+        input::placeholder 
+        {
+            color: #898888;
+        }
+    
+        &-description {
+        
+        }
+        &-btn {
+            button {
+            background-color: black;
+            color: white;
+            border: none;
+            text-align: center;
+            padding: 10px 0 10px 0;
+            width: 1920px;
+            outline: none;
+            font-size: 15px;
+            font-weight: 26px;
+            }
+        }
+       
+    }
+}
+.feedback_form-input-copyright {
+    padding-top: 30px;
+    width: 1920px;
+
+    font-size: 14px;
+    font-weight: 26px;
+    color: #898888;
+    text-align: center;
+}
+
+/* ========== / feedback ============== */

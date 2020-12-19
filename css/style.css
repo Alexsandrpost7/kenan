@@ -265,10 +265,11 @@
 .provid {
   background-image: url(/img/bgr_provid.png);
   background-repeat: no-repeat;
-  height: 800px;
+  height: 1800px;
   max-width: 1920px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 1920px; }
 
 .provid_title {
   text-align: center;
@@ -280,7 +281,8 @@
   .provid_title__text {
     font-size: 16px;
     font-weight: 26px;
-    color: #777777; }
+    color: #777777;
+    padding-top: 10px; }
 
 .provid_flex {
   padding-top: 200px;
@@ -289,7 +291,6 @@
   justify-content: center;
   border: 5px solid pink; }
   .provid_flex_items-1 {
-    /*  margin-right: 100px;*/
     width: 340px;
     text-align: center; }
     .provid_flex_items-1-cover {
@@ -306,13 +307,14 @@
     .provid_flex_items-1-title {
       color: white;
       font-size: 26px;
-      font-weight: 26px; }
+      font-weight: 26px;
+      padding-top: 20px; }
     .provid_flex_items-1-text {
       font-size: 18px;
       font-weight: 23px;
-      color: #383838; }
+      color: #383838;
+      padding-top: 15px; }
   .provid_flex_items-2 {
-    /* margin: 100px;*/
     width: 340px;
     text-align: center;
     margin: 0 40px 0 40px; }
@@ -330,11 +332,13 @@
     .provid_flex_items-2-title {
       font-size: 26px;
       font-weight: 26px;
-      color: white; }
+      color: white;
+      padding-top: 20px; }
     .provid_flex_items-2-text {
       font-size: 18px;
       font-weight: 23px;
-      color: #383838; }
+      color: #383838;
+      padding-top: 15px; }
   .provid_flex_items-3 {
     width: 340px;
     text-align: center; }
@@ -352,23 +356,132 @@
     .provid_flex_items-3-title {
       font-size: 26px;
       font-weight: 26px;
-      color: white; }
+      color: white;
+      padding-top: 20px; }
     .provid_flex_items-3-text {
       font-size: 18px;
       font-weight: 23px;
-      color: #383838; }
-  .provid_flex .provid_btn {
-    height: 60px;
-    width: 220px;
-    background-color: #67e41f;
-    text-align: center; }
-    .provid_flex .provid_btn_btn {
-      height: 60px;
-      width: 220px;
-      background-color: #67e41f; }
-    .provid_flex .provid_btn_text {
-      font-size: 160px;
-      font-weight: 260px;
-      color: #df1bb4; }
+      color: #383838;
+      padding-top: 15px; }
+
+.provid_btn {
+  height: 60px;
+  width: 220px;
+  background-color: white;
+  text-align: center;
+  margin-top: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+  .provid_btn_text {
+    font-size: 16px;
+    font-weight: 26px;
+    font-weight: bold;
+    color: black;
+    padding-top: 23px; }
 
 /* ========== / provid ============= */
+/* ========== contact ==============*/
+.contact {
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .contact_title {
+    font-size: 34px;
+    font-weight: 26px; }
+  .contact_description {
+    font-size: 16px;
+    font-weight: 26px;
+    color: #898888; }
+  .contact .contact_flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto; }
+    .contact .contact_flex-1 {
+      height: 50px; }
+      .contact .contact_flex-1_text {
+        font-size: 12px;
+        font-weight: 26px;
+        color: #898888;
+        padding-top: 10px; }
+    .contact .contact_flex-2 {
+      height: 50px; }
+      .contact .contact_flex-2_text {
+        font-size: 12px;
+        font-weight: 26px;
+        color: #898888;
+        padding: 0 150px 0 150px;
+        padding-top: 10px; }
+    .contact .contact_flex-3 {
+      height: 50px; }
+      .contact .contact_flex-3_text {
+        font-size: 12px;
+        font-weight: 26px;
+        color: #898888;
+        padding-top: 10px; }
+
+/* ========== / contact ==============*/
+/* ========== feedback ============== */
+/* это flex все разные!!!
+.feedback_form {
+    padding-top: 200px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-name {
+        &::placeholder {
+            color: #898888;
+        }
+    }
+    &-email {}
+    &-number {}
+    &-description {}
+    &-btn {}
+}
+*/
+.feedback_form {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 26px; }
+  .feedback_form-input {
+    padding: 10px 0 10px 0;
+    width: 1920px;
+    border: 1px solid #898888; }
+    .feedback_form-input input {
+      border: none;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      width: 1920px;
+      outline: none; }
+    .feedback_form-input input::placeholder {
+      color: #898888; }
+    .feedback_form-input-btn button {
+      background-color: black;
+      color: white;
+      border: none;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      width: 1920px;
+      outline: none;
+      font-size: 15px;
+      font-weight: 26px; }
+
+.feedback_form-input-copyright {
+  padding-top: 30px;
+  width: 1920px;
+  font-size: 14px;
+  font-weight: 26px;
+  color: #898888;
+  text-align: center; }
+
+/* ========== / feedback ============== */
