@@ -1,4 +1,39 @@
+@mixin title_black {
+    font-size: 44px;
+    font-weight: 17px;
+    color: #1d1e1f;
+}
 
+@mixin subtitle {
+    font-size: 16px;
+    font-weight: 17px;
+    color: #898888;
+}
+
+@mixin text_grey {
+    color: #b7b7b7;
+    font-size: 15px;
+    font-weight: 22px;
+}
+@mixin text_grey_litl {
+    color: #989696;
+    font-size: 13px; 
+}
+@mixin team_name {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 26px;
+    color: #464646;
+    
+}
+
+@mixin team_text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 26px;
+    color: #b3b3b3;
+}
 /* ========= header =============*/
 
 .header-inner {
@@ -25,8 +60,10 @@
             padding-left: 50px;
             
             a {
-                color: #989696;
+               @include text_grey_litl();
+                /*color: #989696;
                 font-size: 13px;          
+                */
                 text-decoration: none;
               
             &:hover {
@@ -51,15 +88,19 @@
         }
 
         &__title {
-            font-size: 44px;
+           @include title_black();
+            /*font-size: 44px;
             font-weight: 17px;
             color: #1d1e1f;
+            */
         }
 
         &__subtitle {
-            font-size: 16px;
+            @include subtitle();
+            /*font-size: 16px;
             font-weight: 17px;
             color: #898888;
+            */
             padding-bottom: 50px;
         }
 
@@ -133,9 +174,11 @@ margin-left: 200px;
 
             }
             &__text {
-                color: #b7b7b7;
+               @include text_grey();
+                /*color: #b7b7b7;
                 font-size: 15px;
                 font-weight: 22px;
+                */
             }
             &__circle {
                 width: 1em;
@@ -165,9 +208,11 @@ margin-left: 200px;
                 font-weight: 26px;
             }
             &__text {
-                color: #b7b7b7;
+               @include text_grey();
+                /*color: #b7b7b7;
                 font-size: 15px;
                 font-weight: 22px;
+                */
             }
             &__circle {
                 width: 1em;
@@ -202,14 +247,18 @@ margin-top: 150px;
 margin-bottom: 120px;
 
     &__title {
-        font-size: 34px;
+      @include title_black();
+        /*font-size: 34px;
         font-weight: 26px;
         color: #1d1e1f;
+        */
     }
     &__text {
-        font-size: 16px;
+        @include subtitle();
+        /*font-size: 16px;
         font-weight: 26px;
         color: #898888;
+        */
     }
 }
 
@@ -224,17 +273,23 @@ margin-bottom: 120px;
             text-align: center;
         }
         &__name {
-            margin-top: 20px;
+         
+            @include team_name();
+         /*   margin-top: 20px;
             text-align: center;
             font-size: 24px;
             font-weight: 26px;
             color: #464646;
+            */
         }
         &__text {
-            text-align: center;
+           @include team_text();
+            
+          /* text-align: center;
             font-size: 13px;
             font-weight: 26px;
             color: #b3b3b3;
+            */
         }
         
         &__connect {
@@ -251,17 +306,22 @@ margin-bottom: 120px;
         align-self: baseline;
         &__foto {}
         &__name {
-            margin-top: 20px;
+            @include team_name();
+          /*  margin-top: 20px;
             text-align: center;
             font-size: 24px;
             font-weight: 26px;
             color: #464646;
+            */
         }
         &__text {
-            text-align: center;
+           @include team_text();
+            
+          /* text-align: center;
             font-size: 13px;
             font-weight: 26px;
             color: #b3b3b3;
+            */
         }
         &__connect {
             display: flex;
@@ -277,18 +337,23 @@ margin-bottom: 120px;
         margin: 100px 0 0 200px;
         &__foto {}
         &__name {
-            text-align: center;
+            @include team_name();
+         /*   text-align: center;
             margin-top: 20px;
             text-align: center;
             font-size: 24px;
             font-weight: 26px;
             color: #464646;
+            */
         }
         &__text {
+            @include team_text();
+         /*   
             text-align: center;
             font-size: 13px;
             font-weight: 26px;
             color: #b3b3b3;
+            */
         }
         &__connect {
             display: flex;
@@ -324,9 +389,11 @@ margin-bottom: 120px;
         color: white;
     }
     &__text {
-        font-size: 16px;
+       @include text_grey();
+        /*font-size: 16px;
         font-weight: 26px;
         color: #777777;
+        */
         padding-top: 10px;
     }
 }
@@ -375,76 +442,9 @@ margin-bottom: 120px;
             }
                 
         }
-    &_items-2 {
-        width: 340px;
-        text-align: center;  
-        margin: 0 40px 0 40px;
-
-        &-cover {
-                
-            display: flex;
-            justify-content: center;
-
-            &-circle {
-                height: 130px;
-                width: 130px;
-                border: 6px solid white;
-                border-radius: 50%;
-            }
-            &-logo {
-                text-align: center;
-                padding-top: 40px;
-            }
-        }
-
-        &-title {
-            font-size: 26px;
-            font-weight: 26px;
-            color: white;
-            padding-top: 20px;
-        }
-        &-text {
-            font-size: 18px;
-            font-weight: 23px;
-            color: #383838;
-            padding-top: 15px;
-        }
-    }
-    &_items-3 {
-        width: 340px;
-        text-align: center;
-      
-        &-cover {
-                
-            display: flex;
-            justify-content: center;
-
-            &-circle {
-                height: 130px;
-                width: 130px;
-                border: 6px solid white;
-                border-radius: 50%;
-            }
-            
-            &-logo {
-                text-align: center;
-                padding-top: 40px;
-            }
-        }
-
-        &-title {
-            font-size: 26px;
-            font-weight: 26px;
-            color: white;
-            padding-top: 20px;
-        }
-        &-text {
-            font-size: 18px;
-            font-weight: 23px;
-            color: #383838;
-            padding-top: 15px;
-        }
-    }
+        
+   
+  
 }
 .provid_btn {
         height: 60px;
@@ -477,13 +477,17 @@ margin-bottom: 120px;
     text-align: center;
 
     &_title {
-        font-size: 34px;
+        @include title_black();
+        /*font-size: 34px;
         font-weight: 26px;
+        */
     }
     &_description {
-        font-size: 16px;
+      @include subtitle();
+        /*font-size: 16px;
         font-weight: 26px;
         color: #898888;
+        */
     }
 
   .contact_flex{
@@ -497,9 +501,11 @@ margin-bottom: 120px;
         height: 50px;
         &_img {}
         &_text { 
-            font-size: 12px;
+            @include text_grey_litl();
+            /*font-size: 12px;
             font-weight: 26px;
             color: #898888;
+            */
             padding-top: 10px;
         }
     }
@@ -508,21 +514,12 @@ margin-bottom: 120px;
         height: 50px;
         &_img {}
         &_text {
-            font-size: 12px;
+            @include text_grey_litl();
+            /*font-size: 12px;
             font-weight: 26px;
             color: #898888;
+            */
             padding: 0 150px 0 150px;
-            padding-top: 10px;
-        }
-    }
-
-    &-3{
-        height: 50px;
-        &_img {}
-        &_text {
-            font-size: 12px;
-            font-weight: 26px;
-            color: #898888;
             padding-top: 10px;
         }
     }
@@ -610,10 +607,11 @@ margin-bottom: 120px;
 .feedback_form-input-copyright {
     padding-top: 30px;
     width: 1920px;
-
-    font-size: 14px;
+@include subtitle();
+    /*font-size: 14px;
     font-weight: 26px;
     color: #898888;
+    */
     text-align: center;
 }
 

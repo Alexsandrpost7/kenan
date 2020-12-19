@@ -21,6 +21,9 @@
       .header-inner__nav li a {
         color: #989696;
         font-size: 13px;
+        /*color: #989696;
+                font-size: 13px;          
+                */
         text-decoration: none; }
         .header-inner__nav li a:hover {
           color: black; }
@@ -35,11 +38,19 @@
   .header-inner__title {
     font-size: 44px;
     font-weight: 17px;
-    color: #1d1e1f; }
+    color: #1d1e1f;
+    /*font-size: 44px;
+            font-weight: 17px;
+            color: #1d1e1f;
+            */ }
   .header-inner__subtitle {
     font-size: 16px;
     font-weight: 17px;
     color: #898888;
+    /*font-size: 16px;
+            font-weight: 17px;
+            color: #898888;
+            */
     padding-bottom: 50px; }
   .header-inner__button__text button {
     height: 40px;
@@ -86,7 +97,11 @@
       .history-inner-nechet__2011__text {
         color: #b7b7b7;
         font-size: 15px;
-        font-weight: 22px; }
+        font-weight: 22px;
+        /*color: #b7b7b7;
+                font-size: 15px;
+                font-weight: 22px;
+                */ }
       .history-inner-nechet__2011__circle {
         width: 1em;
         height: 1em;
@@ -111,7 +126,11 @@
       .history-inner-chet__2012__text {
         color: #b7b7b7;
         font-size: 15px;
-        font-weight: 22px; }
+        font-weight: 22px;
+        /*color: #b7b7b7;
+                font-size: 15px;
+                font-weight: 22px;
+                */ }
       .history-inner-chet__2012__circle {
         width: 1em;
         height: 1em;
@@ -137,13 +156,21 @@
   margin-top: 150px;
   margin-bottom: 120px; }
   .team-items_header__title {
-    font-size: 34px;
-    font-weight: 26px;
-    color: #1d1e1f; }
+    font-size: 44px;
+    font-weight: 17px;
+    color: #1d1e1f;
+    /*font-size: 34px;
+        font-weight: 26px;
+        color: #1d1e1f;
+        */ }
   .team-items_header__text {
     font-size: 16px;
-    font-weight: 26px;
-    color: #898888; }
+    font-weight: 17px;
+    color: #898888;
+    /*font-size: 16px;
+        font-weight: 26px;
+        color: #898888;
+        */ }
 
 .team-items-flex {
   display: flex;
@@ -158,12 +185,23 @@
       text-align: center;
       font-size: 24px;
       font-weight: 26px;
-      color: #464646; }
+      color: #464646;
+      /*   margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 26px;
+            color: #464646;
+            */ }
     .team-items-flex__1__text {
       text-align: center;
       font-size: 13px;
       font-weight: 26px;
-      color: #b3b3b3; }
+      color: #b3b3b3;
+      /* text-align: center;
+            font-size: 13px;
+            font-weight: 26px;
+            color: #b3b3b3;
+            */ }
     .team-items-flex__1__connect {
       display: flex;
       justify-content: center;
@@ -177,12 +215,23 @@
       text-align: center;
       font-size: 24px;
       font-weight: 26px;
-      color: #464646; }
+      color: #464646;
+      /*  margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 26px;
+            color: #464646;
+            */ }
     .team-items-flex__2__text {
       text-align: center;
       font-size: 13px;
       font-weight: 26px;
-      color: #b3b3b3; }
+      color: #b3b3b3;
+      /* text-align: center;
+            font-size: 13px;
+            font-weight: 26px;
+            color: #b3b3b3;
+            */ }
     .team-items-flex__2__connect {
       display: flex;
       justify-content: center;
@@ -192,17 +241,29 @@
   .team-items-flex__3 {
     margin: 100px 0 0 200px; }
     .team-items-flex__3__name {
-      text-align: center;
       margin-top: 20px;
       text-align: center;
       font-size: 24px;
       font-weight: 26px;
-      color: #464646; }
+      color: #464646;
+      /*   text-align: center;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 26px;
+            color: #464646;
+            */ }
     .team-items-flex__3__text {
       text-align: center;
       font-size: 13px;
       font-weight: 26px;
-      color: #b3b3b3; }
+      color: #b3b3b3;
+      /*   
+            text-align: center;
+            font-size: 13px;
+            font-weight: 26px;
+            color: #b3b3b3;
+            */ }
     .team-items-flex__3__connect {
       display: flex;
       justify-content: center;
@@ -229,9 +290,13 @@
     font-weight: 26px;
     color: white; }
   .provid_title__text {
-    font-size: 16px;
-    font-weight: 26px;
-    color: #777777;
+    color: #b7b7b7;
+    font-size: 15px;
+    font-weight: 22px;
+    /*font-size: 16px;
+        font-weight: 26px;
+        color: #777777;
+        */
     padding-top: 10px; }
 
 .provid_flex {
@@ -264,55 +329,6 @@
       font-weight: 23px;
       color: #383838;
       padding-top: 15px; }
-  .provid_flex_items-2 {
-    width: 340px;
-    text-align: center;
-    margin: 0 40px 0 40px; }
-    .provid_flex_items-2-cover {
-      display: flex;
-      justify-content: center; }
-      .provid_flex_items-2-cover-circle {
-        height: 130px;
-        width: 130px;
-        border: 6px solid white;
-        border-radius: 50%; }
-      .provid_flex_items-2-cover-logo {
-        text-align: center;
-        padding-top: 40px; }
-    .provid_flex_items-2-title {
-      font-size: 26px;
-      font-weight: 26px;
-      color: white;
-      padding-top: 20px; }
-    .provid_flex_items-2-text {
-      font-size: 18px;
-      font-weight: 23px;
-      color: #383838;
-      padding-top: 15px; }
-  .provid_flex_items-3 {
-    width: 340px;
-    text-align: center; }
-    .provid_flex_items-3-cover {
-      display: flex;
-      justify-content: center; }
-      .provid_flex_items-3-cover-circle {
-        height: 130px;
-        width: 130px;
-        border: 6px solid white;
-        border-radius: 50%; }
-      .provid_flex_items-3-cover-logo {
-        text-align: center;
-        padding-top: 40px; }
-    .provid_flex_items-3-title {
-      font-size: 26px;
-      font-weight: 26px;
-      color: white;
-      padding-top: 20px; }
-    .provid_flex_items-3-text {
-      font-size: 18px;
-      font-weight: 23px;
-      color: #383838;
-      padding-top: 15px; }
 
 .provid_btn {
   height: 60px;
@@ -337,12 +353,20 @@
   margin-right: auto;
   text-align: center; }
   .contact_title {
-    font-size: 34px;
-    font-weight: 26px; }
+    font-size: 44px;
+    font-weight: 17px;
+    color: #1d1e1f;
+    /*font-size: 34px;
+        font-weight: 26px;
+        */ }
   .contact_description {
     font-size: 16px;
-    font-weight: 26px;
-    color: #898888; }
+    font-weight: 17px;
+    color: #898888;
+    /*font-size: 16px;
+        font-weight: 26px;
+        color: #898888;
+        */ }
   .contact .contact_flex {
     display: flex;
     justify-content: center;
@@ -352,24 +376,23 @@
     .contact .contact_flex-1 {
       height: 50px; }
       .contact .contact_flex-1_text {
-        font-size: 12px;
-        font-weight: 26px;
-        color: #898888;
+        color: #989696;
+        font-size: 13px;
+        /*font-size: 12px;
+            font-weight: 26px;
+            color: #898888;
+            */
         padding-top: 10px; }
     .contact .contact_flex-2 {
       height: 50px; }
       .contact .contact_flex-2_text {
-        font-size: 12px;
-        font-weight: 26px;
-        color: #898888;
+        color: #989696;
+        font-size: 13px;
+        /*font-size: 12px;
+            font-weight: 26px;
+            color: #898888;
+            */
         padding: 0 150px 0 150px;
-        padding-top: 10px; }
-    .contact .contact_flex-3 {
-      height: 50px; }
-      .contact .contact_flex-3_text {
-        font-size: 12px;
-        font-weight: 26px;
-        color: #898888;
         padding-top: 10px; }
 
 /* ========== / contact ==============*/
@@ -431,9 +454,13 @@
 .feedback_form-input-copyright {
   padding-top: 30px;
   width: 1920px;
-  font-size: 14px;
-  font-weight: 26px;
+  font-size: 16px;
+  font-weight: 17px;
   color: #898888;
+  /*font-size: 14px;
+    font-weight: 26px;
+    color: #898888;
+    */
   text-align: center; }
 
 /* ========== / feedback ============== */
