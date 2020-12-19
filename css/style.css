@@ -97,25 +97,6 @@
         margin-left: 466px;
         z-index: 1;
         background: black; }
-    .history-inner-nechet__2013__year {
-      text-align: right;
-      color: white;
-      font-size: 48px;
-      font-weight: 26px; }
-    .history-inner-nechet__2013__text {
-      color: #b7b7b7;
-      font-size: 15px;
-      font-weight: 22px; }
-    .history-inner-nechet__2013__circle {
-      width: 2em;
-      height: 2em;
-      border: 5px solid white;
-      border-radius: 50%;
-      position: absolute;
-      margin-top: -95px;
-      margin-left: 457px;
-      z-index: 1;
-      background: black; }
   .history-inner-chet {
     width: 400px;
     padding-top: 150px;
@@ -141,24 +122,6 @@
         margin-left: -87px;
         z-index: 1;
         background: black; }
-    .history-inner-chet__2014__year {
-      color: white;
-      font-size: 48px;
-      font-weight: 26px; }
-    .history-inner-chet__2014__text {
-      color: #b7b7b7;
-      font-size: 15px;
-      font-weight: 22px; }
-    .history-inner-chet__2014__circle {
-      width: 1em;
-      height: 1em;
-      border: 3px solid white;
-      border-radius: 50%;
-      position: absolute;
-      margin-top: -85px;
-      margin-left: -87px;
-      z-index: 1;
-      background: black; }
 
 /* ========== / history ============= */
 /* ========== team ============= */

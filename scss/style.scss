@@ -97,8 +97,8 @@ margin-left: 200px;
 
 .history {
     
-}
-.history-inner {
+
+&-inner {
     display: flex;
     justify-content: center;
     flex-basis: 500px;
@@ -112,9 +112,7 @@ margin-left: 200px;
     background-repeat: no-repeat;
     height: 800px;
     width: 1920px;
-
-
-
+    
     &-nechet {
         width: 400px;
         padding-top: 30px;
@@ -151,31 +149,7 @@ margin-left: 200px;
                 background: black;
             }
         }
-        &__2013 {
-            &__year {
-                text-align: right;
-                color: white;
-                font-size: 48px;
-                font-weight: 26px;
-            }
-            &__text {
-                color: #b7b7b7;
-                font-size: 15px;
-                font-weight: 22px;
-                
-            }
-            &__circle {
-                width: 2em;
-                height: 2em;
-                border: 5px solid white;
-                border-radius: 50%;
-                position: absolute;
-                margin-top: -95px;
-                margin-left: 457px;
-                z-index: 1;
-                background: black;
-            }
-        }
+        
     }
 
     &-chet {
@@ -207,32 +181,10 @@ margin-left: 200px;
                 background: black;
             }
         }
-        &__2014 {
-            &__year {
-                color: white;
-                font-size: 48px;
-                font-weight: 26px;
-            }
-            &__text {
-                color: #b7b7b7;
-                font-size: 15px;
-                font-weight: 22px;
-            }
-            &__circle {
-                width: 1em;
-                height: 1em;
-                border: 3px solid white;
-                border-radius: 50%;
-                position: absolute;
-                margin-top: -85px;
-                margin-left: -87px;
-                z-index: 1;
-                background: black;
-            }
-        }
+       
     }
 }
-
+}
 /* ========== / history ============= */
 
 /* ========== team ============= */
