@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ========= header =============*/
 .header-inner {
   padding-top: 20px;
@@ -22,7 +23,8 @@
         font-size: 13px;
         text-decoration: none; }
         .header-inner__nav li a:hover {
-          color: black; }
+          color: black;
+          transition-duration: 8s; }
         .header-inner__nav li a:active {
           color: red; }
   .header-inner__text {
@@ -47,7 +49,7 @@
     .header-inner__button__text button:hover {
       color: white;
       background-color: black;
-      transition-duration: 0.2s; }
+      transition-duration: 2s; }
 
 /* ========= / header =============*/
 /* ========== history ============= */
@@ -317,6 +319,69 @@
 
 /* ========== / contact ==============*/
 /* ========== feedback ============== */
+/* Для формы обратной связи 
+.feedback_form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 26px;
+
+   
+    &-input {
+      
+        padding: 10px 0 10px 0;
+        width: 1920px;
+        border: 1px solid #898888;
+
+        input {
+            border: none;
+            text-align: center;
+            padding: 10px 0 10px 0;
+            width: 1920px;
+            outline: none;
+        }
+
+        input::placeholder 
+        {
+            color: #898888;
+        }
+    
+        &-description {
+        
+        }
+        &-btn {
+            button {
+            background-color: black;
+            color: white;
+            border: none;
+            text-align: center;
+            padding: 10px 0 10px 0;
+            width: 1920px;
+            outline: none;
+            font-size: 15px;
+            font-weight: 26px;
+            
+                &:hover {
+                    background-color: #898888;
+                }
+            }
+        }
+       
+    }
+}
+.feedback_form-input-copyright {
+    padding-top: 30px;
+    width: 1920px;
+    @include subtitle();
+    text-align: center;
+}
+
+Для формы обратной связи */
 .feedback_form {
   margin-left: auto;
   margin-right: auto;
@@ -358,10 +423,6 @@
   font-size: 16px;
   font-weight: 17px;
   color: #898888;
-  /*font-size: 14px;
-    font-weight: 26px;
-    color: #898888;
-    */
   text-align: center; }
 
 /* ========== / feedback ============== */

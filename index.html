@@ -219,25 +219,27 @@
     </section>
     <!-- / contact  -->
   
-    <!-- Нужно писать flex для одного элемента -->
+    <!-- Для формы обратной связи  -->
     <section class="feedback">
         <div class="feedback_form">
-            <div class="feedback_form-input">
-                <input type="text" placeholder="Full Name" />
-            </div>
-            <div class="feedback_form-input">
-                <input type="text" placeholder="Email" />
-            </div>
-            <div class="feedback_form-input">
-                <input type="text" placeholder="Number" />
-            </div>
-            <div class="feedback_form-input-description">
-              <!--  <input type="submit" placeholder="Write your Message here..." /> -->
-               <p> <textarea name="description"> placeholder="Write your Message here..." </textarea>  </p>
-            </div>
-            <div class="feedback_form-input-btn">
-                <button>Submit</button>
-            </div>
+            <form action="/script/form_send.php" method="POST">
+                <div class="feedback_form-input">
+                    <input type="text" name="name" placeholder="Full Name" />
+                </div>
+                <div class="feedback_form-input">
+                    <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="feedback_form-input">
+                    <input type="text" placeholder="Number" />
+                </div>
+                <div class="feedback_form-input-description">
+                <!--  <input type="submit" placeholder="Write your Message here..." /> -->
+                <p> <textarea name="description"> placeholder="Write your Message here..." </textarea>  </p>
+                </div>
+                <div class="feedback_form-input-btn">
+                    <button>Submit</button>
+                </div>
+            </form>    
             <div class="feedback_form-input-copyright">
                 Copyright © Kenan Hamidic. All rights reserved.
             </div>
