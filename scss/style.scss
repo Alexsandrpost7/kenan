@@ -61,9 +61,7 @@
             
             a {
                @include text_grey_litl();
-                /*color: #989696;
-                font-size: 13px;          
-                */
+
                 text-decoration: none;
               
             &:hover {
@@ -89,18 +87,12 @@
 
         &__title {
            @include title_black();
-            /*font-size: 44px;
-            font-weight: 17px;
-            color: #1d1e1f;
-            */
+
         }
 
         &__subtitle {
             @include subtitle();
-            /*font-size: 16px;
-            font-weight: 17px;
-            color: #898888;
-            */
+
             padding-bottom: 50px;
         }
 
@@ -175,10 +167,7 @@ margin-left: 200px;
             }
             &__text {
                @include text_grey();
-                /*color: #b7b7b7;
-                font-size: 15px;
-                font-weight: 22px;
-                */
+
             }
             &__circle {
                 width: 1em;
@@ -209,10 +198,7 @@ margin-left: 200px;
             }
             &__text {
                @include text_grey();
-                /*color: #b7b7b7;
-                font-size: 15px;
-                font-weight: 22px;
-                */
+
             }
             &__circle {
                 width: 1em;
@@ -248,17 +234,11 @@ margin-bottom: 120px;
 
     &__title {
       @include title_black();
-        /*font-size: 34px;
-        font-weight: 26px;
-        color: #1d1e1f;
-        */
+
     }
     &__text {
         @include subtitle();
-        /*font-size: 16px;
-        font-weight: 26px;
-        color: #898888;
-        */
+
     }
 }
 
@@ -275,21 +255,11 @@ margin-bottom: 120px;
         &__name {
          
             @include team_name();
-         /*   margin-top: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 26px;
-            color: #464646;
-            */
+
         }
         &__text {
            @include team_text();
             
-          /* text-align: center;
-            font-size: 13px;
-            font-weight: 26px;
-            color: #b3b3b3;
-            */
         }
         
         &__connect {
@@ -307,21 +277,11 @@ margin-bottom: 120px;
         &__foto {}
         &__name {
             @include team_name();
-          /*  margin-top: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 26px;
-            color: #464646;
-            */
+
         }
         &__text {
            @include team_text();
             
-          /* text-align: center;
-            font-size: 13px;
-            font-weight: 26px;
-            color: #b3b3b3;
-            */
         }
         &__connect {
             display: flex;
@@ -338,22 +298,11 @@ margin-bottom: 120px;
         &__foto {}
         &__name {
             @include team_name();
-         /*   text-align: center;
-            margin-top: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 26px;
-            color: #464646;
-            */
+   
         }
         &__text {
             @include team_text();
-         /*   
-            text-align: center;
-            font-size: 13px;
-            font-weight: 26px;
-            color: #b3b3b3;
-            */
+
         }
         &__connect {
             display: flex;
@@ -390,10 +339,7 @@ margin-bottom: 120px;
     }
     &__text {
        @include text_grey();
-        /*font-size: 16px;
-        font-weight: 26px;
-        color: #777777;
-        */
+
         padding-top: 10px;
     }
 }
@@ -404,7 +350,6 @@ margin-bottom: 120px;
     display: flex;
     justify-content: center;
     
-    border: 5px solid pink;
 
         &_items-1 {
             width: 340px;
@@ -478,16 +423,10 @@ margin-bottom: 120px;
 
     &_title {
         @include title_black();
-        /*font-size: 34px;
-        font-weight: 26px;
-        */
     }
+
     &_description {
       @include subtitle();
-        /*font-size: 16px;
-        font-weight: 26px;
-        color: #898888;
-        */
     }
 
   .contact_flex{
@@ -502,10 +441,6 @@ margin-bottom: 120px;
         &_img {}
         &_text { 
             @include text_grey_litl();
-            /*font-size: 12px;
-            font-weight: 26px;
-            color: #898888;
-            */
             padding-top: 10px;
         }
     }
@@ -515,12 +450,13 @@ margin-bottom: 120px;
         &_img {}
         &_text {
             @include text_grey_litl();
-            /*font-size: 12px;
-            font-weight: 26px;
-            color: #898888;
-            */
             padding: 0 150px 0 150px;
             padding-top: 10px;
+
+            a {
+                text-decoration: none;
+                color: #898888;
+            }
         }
     }
   }  
@@ -530,25 +466,6 @@ margin-bottom: 120px;
 
 /* ========== feedback ============== */
 
-/* это flex все разные!!!
-.feedback_form {
-    padding-top: 200px;
-    width: 1920px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &-name {
-        &::placeholder {
-            color: #898888;
-        }
-    }
-    &-email {}
-    &-number {}
-    &-description {}
-    &-btn {}
-}
-*/
 
 .feedback_form {
     margin-left: auto;
