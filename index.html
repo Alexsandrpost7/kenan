@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>LD Kenan</title>
 
+    <style>
+        body * {
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+    </style>
 
 </head>
 
@@ -222,7 +230,7 @@
     <!-- Для формы обратной связи  -->
     <section class="feedback">
         <div class="feedback_form">
-            <form action="/script/form_send.php" method="POST">
+            <form action="/" method="POST">
                 <div class="feedback_form-input">
                     <input type="text" name="name" placeholder="Full Name" />
                 </div>
@@ -245,6 +253,15 @@
             </div>
         </div>
     </section>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        console.log('ok');
+        $('.logo').click(function () {
+            console.log('click');
+            $('html, body').animate({
+        scrollTop: $('.history').offset().top,
+    }, 300);
+        });
+    </script>
 </body>
 </html>
