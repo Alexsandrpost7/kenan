@@ -1,23 +1,33 @@
+
+@mixin font-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 @mixin title_black {
     font-size: 44px;
     font-weight: 17px;
     color: #1d1e1f;
+    @include font-sans();
 }
 
 @mixin subtitle {
     font-size: 16px;
     font-weight: 17px;
     color: #898888;
+    @include font-sans();
 }
 
 @mixin text_grey {
     color: #b7b7b7;
     font-size: 15px;
     font-weight: 22px;
+    @include font-sans();
 }
 @mixin text_grey_litl {
     color: #989696;
     font-size: 13px; 
+    @include font-sans();
 }
 @mixin team_name {
     margin-top: 20px;
@@ -34,49 +44,62 @@
     font-weight: 26px;
     color: #b3b3b3;
 }
+
+/* ======== / mixin ===========*/
+
+/* ========= wrapper ========= */
+.section-wrapper {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+}
+/* ========= / wrapper ========= */
+
 /* ========= header =============*/
+.section-header__nav {
+    display: block;
 
-.header-inner {
-    padding-top: 20px;
-    padding-bottom: 300px;
-    height: 50vh;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1920px;
-    background: white;
 
-    
-    &__nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-        li {
-            padding-left: 50px;
-            
-            a {
-               @include text_grey_litl();
+        &-inners {
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            /* position: fixed;*/
 
-                text-decoration: none;
-              
-            &:hover {
-                    color: black;
-                    transition-duration: 8s;
-                }
-            &:active {
-                    color: red;
+
+            /* Почему появились отступы? Если уже обнулили .section-wrapper */
+
+            margin: 0px;
+
+            margin-top: -8px;
+                li {
+                    padding-left: 40px;
+                    height: 100px;
 
                     
+                    a {
+                            @include text_grey_litl();
+                            text-decoration: none;
+                            
+                        &:hover {
+                                color: black;
+                                transition-duration: 0.2s;
+                            }
+                        &:active {
+                                color: red;
+                            }
+                        
+                    }
+
                 }
-                
-            }
-        }
-    }
+        }    
+}
+//////////////   
+/* 
         &__text {
             display: flex;
             align-items: center;
@@ -88,7 +111,6 @@
 
         &__title {
            @include title_black();
-
         }
 
         &__subtitle {
@@ -118,8 +140,8 @@
         }
     
  
-}
 
+*/
 /* ========= / header =============*/
 
 /* ========== history ============= */

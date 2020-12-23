@@ -1,56 +1,84 @@
 @charset "UTF-8";
+/* ======== / mixin ===========*/
+/* ========= wrapper ========= */
+.section-wrapper {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%; }
+
+/* ========= / wrapper ========= */
 /* ========= header =============*/
-.header-inner {
-  padding-top: 20px;
-  padding-bottom: 300px;
-  height: 50vh;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1920px;
-  background: white; }
-  .header-inner__nav {
+.section-header__nav {
+  display: block; }
+  .section-header__nav-inners {
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .header-inner__nav li {
-      padding-left: 50px; }
-      .header-inner__nav li a {
+    list-style: none;
+    /* position: fixed;*/
+    /* Почему появились отступы? Если уже обнулили .section-wrapper */
+    margin: 0px;
+    margin-top: -8px; }
+    .section-header__nav-inners li {
+      padding-left: 40px;
+      height: 100px; }
+      .section-header__nav-inners li a {
         color: #989696;
         font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
         text-decoration: none; }
-        .header-inner__nav li a:hover {
+        .section-header__nav-inners li a:hover {
           color: black;
-          transition-duration: 8s; }
-        .header-inner__nav li a:active {
+          transition-duration: 0.2s; }
+        .section-header__nav-inners li a:active {
           color: red; }
-  .header-inner__text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 270px;
-    justify-content: center; }
-  .header-inner__title {
-    font-size: 44px;
-    font-weight: 17px;
-    color: #1d1e1f; }
-  .header-inner__subtitle {
-    font-size: 16px;
-    font-weight: 17px;
-    color: #898888;
-    padding-bottom: 50px; }
-  .header-inner__button__text button {
-    height: 40px;
-    width: 180px;
-    background-color: white; }
-    .header-inner__button__text button:hover {
-      color: white;
-      background-color: black;
-      transition-duration: 2s; }
 
+/* 
+        &__text {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 270px;
+            justify-content: center;
+        
+        }
+
+        &__title {
+           @include title_black();
+        }
+
+        &__subtitle {
+            @include subtitle();
+
+            padding-bottom: 50px;
+        }
+
+        &__button {
+
+            &__text {
+
+                button {
+                  height: 40px;  
+                  width: 180px;
+                  background-color: white;
+
+                  &:hover {
+                      color: white;
+                      background-color: black;
+                      transition-duration: 2s;
+                     
+                  }
+                  
+                }
+            }
+        }
+    
+ 
+
+*/
 /* ========= / header =============*/
 /* ========== history ============= */
 .line {
@@ -87,7 +115,8 @@
       .history-inner-nechet__2011__text {
         color: #b7b7b7;
         font-size: 15px;
-        font-weight: 22px; }
+        font-weight: 22px;
+        font-family: 'Open Sans', sans-serif; }
       .history-inner-nechet__2011__circle {
         width: 1em;
         height: 1em;
@@ -112,7 +141,8 @@
       .history-inner-chet__2012__text {
         color: #b7b7b7;
         font-size: 15px;
-        font-weight: 22px; }
+        font-weight: 22px;
+        font-family: 'Open Sans', sans-serif; }
       .history-inner-chet__2012__circle {
         width: 1em;
         height: 1em;
@@ -140,11 +170,13 @@
   .team-items_header__title {
     font-size: 44px;
     font-weight: 17px;
-    color: #1d1e1f; }
+    color: #1d1e1f;
+    font-family: 'Open Sans', sans-serif; }
   .team-items_header__text {
     font-size: 16px;
     font-weight: 17px;
-    color: #898888; }
+    color: #898888;
+    font-family: 'Open Sans', sans-serif; }
 
 .team-items-flex {
   display: flex;
@@ -232,6 +264,7 @@
     color: #b7b7b7;
     font-size: 15px;
     font-weight: 22px;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 10px; }
 
 .provid_flex {
@@ -289,11 +322,13 @@
   .contact_title {
     font-size: 44px;
     font-weight: 17px;
-    color: #1d1e1f; }
+    color: #1d1e1f;
+    font-family: 'Open Sans', sans-serif; }
   .contact_description {
     font-size: 16px;
     font-weight: 17px;
-    color: #898888; }
+    color: #898888;
+    font-family: 'Open Sans', sans-serif; }
   .contact .contact_flex {
     display: flex;
     justify-content: center;
@@ -305,12 +340,14 @@
       .contact .contact_flex-1_text {
         color: #989696;
         font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
         padding-top: 10px; }
     .contact .contact_flex-2 {
       height: 50px; }
       .contact .contact_flex-2_text {
         color: #989696;
         font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
         padding: 0 150px 0 150px;
         padding-top: 10px; }
         .contact .contact_flex-2_text a {
@@ -423,6 +460,7 @@
   font-size: 16px;
   font-weight: 17px;
   color: #898888;
+  font-family: 'Open Sans', sans-serif;
   text-align: center; }
 
 /* ========== / feedback ============== */
