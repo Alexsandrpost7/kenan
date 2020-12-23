@@ -65,7 +65,7 @@
   margin-right: auto;
   flex-direction: row;
   background-color: black;
-  background-image: url(/img/bgr_white.png);
+  background-image: url(./img/bgr_white.png);
   background-position: bottom;
   background-repeat: no-repeat;
   height: 800px;
@@ -213,7 +213,7 @@
 /* ========== / team ============= */
 /* ========== provid ============= */
 .provid {
-  background-image: url(/img/bgr_provid.png);
+  background-image: url(./img/bgr_provid.png);
   background-repeat: no-repeat;
   height: 1800px;
   max-width: 1920px;
