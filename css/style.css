@@ -1,30 +1,30 @@
 @charset "UTF-8";
 /* ======== / mixin ===========*/
-/* ========= wrapper ========= */
-.section-wrapper {
-  padding: 0px;
-  margin: 0px;
-  max-width: 100%; }
+html, body {
+  padding: 0;
+  margin: 0; }
 
+/* ========= wrapper ========= */
 /* ========= / wrapper ========= */
 /* ========= header =============*/
 .section-header__nav {
-  display: block; }
+  position: fixed;
+  transform: translateX(50%);
+  background-color: white; }
   .section-header__nav-inners {
-    margin-left: auto;
-    margin-right: auto;
-    background: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     list-style: none;
-    /* position: fixed;*/
     /* Почему появились отступы? Если уже обнулили .section-wrapper */
     margin: 0px;
-    margin-top: -8px; }
+    height: 60px;
+    float: none;
+    overflow: hidden; }
     .section-header__nav-inners li {
-      padding-left: 40px;
-      height: 100px; }
+      align-self: center; }
+      .section-header__nav-inners li:nth-child(2n) {
+        background-color: green;
+        margin: 0 20px 0 20px; }
       .section-header__nav-inners li a {
         color: #989696;
         font-size: 13px;
