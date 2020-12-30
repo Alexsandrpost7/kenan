@@ -262,23 +262,24 @@ html, body {
   .contact .contact_flex {
     display: flex;
     justify-content: center;
-    padding-top: 70px;
-    margin-left: auto;
-    margin-right: auto; }
+    height: 50px;
+    padding-top: 70px; }
     .contact .contact_flex-1 {
-      height: 50px; }
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%; }
       .contact .contact_flex-1_text {
         color: #989696;
         font-size: 13px;
         font-family: 'Open Sans', sans-serif;
         padding-top: 10px; }
     .contact .contact_flex-2 {
-      height: 50px; }
+      width: 100%; }
       .contact .contact_flex-2_text {
         color: #989696;
         font-size: 13px;
         font-family: 'Open Sans', sans-serif;
-        padding: 0 150px 0 150px;
+        padding: 0 50px 0 50px;
         padding-top: 10px; }
         .contact .contact_flex-2_text a {
           text-decoration: none;
