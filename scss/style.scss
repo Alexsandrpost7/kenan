@@ -148,14 +148,14 @@ html, body {padding:0; margin:0;}
 
 // }
 
-.history-inner {
+ .history-inner {
+     display: flex;
+     flex-direction: row;    
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
 
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    flex-direction: row;    
+    
     background-color: black;
     background-image: url(/img/bgr_white.png);
     background-position: bottom;
@@ -163,7 +163,7 @@ html, body {padding:0; margin:0;}
     height: 950px;
     width: 100%;
     z-index: 15;
-   
+    
     
     
     &-items {
@@ -171,24 +171,29 @@ html, body {padding:0; margin:0;}
         width: 450px;
         padding-top: 30px;
 
-        &:nth-child(even) {
-            margin-left: 450px;
-            padding-left: 100px;
-        }
-        &:nth-child(odd) {
-            margin-right: 450px;
-            padding-right: 50px;
-        }
-
-                &_item {
+        
+        &_item {
+            // border: 2px solid yellow;
+            &:nth-child(even) {
+                margin-left: 450px;
+                padding-left: 100px;
+                border: 2px solid purple;
+            }
+            &:nth-child(odd) {
+                margin-right: 450px;
+                padding-right: 50px;
+            }
                     &__year {
                         @include title_black()
                         color: white;
                         &:nth-child(even) {
+                            color: red;
                         }
                         &:nth-child(odd) {
                             text-align: right;
-                            border: 1px solid green
+                            border: 1px solid green;
+                            color: green;
+
                         }
 
                     }
@@ -219,7 +224,7 @@ html, body {padding:0; margin:0;}
 /* ========== team ============= */
 .team-items {
     height: 750px;
-    width: 1920px;
+    width: 100%;
     text-align: center;
     margin-left: auto;
      margin-right: auto;
@@ -242,11 +247,21 @@ margin-bottom: 120px;
 
 .team-items-flex {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 1920px;
-    
-    &__1{
-        margin: 100px 200px 0 0;
+
+}
+
+.team-items-flex__pers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+
+    &:nth-child(odd) {
+    margin-top: 350px;
+    }
+
         &__foto {
             text-align: center;
         }
@@ -263,55 +278,14 @@ margin-bottom: 120px;
         &__connect {
             display: flex;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 20px;
             &__twit {}
             &__inst {
                 padding-left: 15px;
             }
         }
-    }
-    &__2{
-        align-self: baseline;
-        &__foto {}
-        &__name {
-            @include team_name();
 
-        }
-        &__text {
-           @include team_text();
-            
-        }
-        &__connect {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            &__twit {}
-            &__inst {
-                padding-left: 15px;
-            }
-        }
-    }
-    &__3{
-        margin: 100px 0 0 200px;
-        &__foto {}
-        &__name {
-            @include team_name();
-   
-        }
-        &__text {
-            @include team_text();
-
-        }
-        &__connect {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            &__twit {}
-            &__inst {
-                padding-left: 15px;
-            }
-        }
-    }
+  
 }
 /* ========== / team ============= */
 

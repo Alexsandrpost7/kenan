@@ -65,10 +65,10 @@ html, body {
 /* ========== history ============= */
 .history-inner {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: row;
   background-color: black;
   background-image: url(/img/bgr_white.png);
   background-position: bottom;
@@ -80,10 +80,11 @@ html, body {
     border-right: 5px solid white;
     width: 450px;
     padding-top: 30px; }
-    .history-inner-items:nth-child(even) {
+    .history-inner-items_item:nth-child(even) {
       margin-left: 450px;
-      padding-left: 100px; }
-    .history-inner-items:nth-child(odd) {
+      padding-left: 100px;
+      border: 2px solid purple; }
+    .history-inner-items_item:nth-child(odd) {
       margin-right: 450px;
       padding-right: 50px; }
     .history-inner-items_item__year {
@@ -92,9 +93,12 @@ html, body {
       color: #1d1e1f;
       font-family: 'Open Sans', sans-serif;
       color: white; }
+      .history-inner-items_item__year:nth-child(even) {
+        color: red; }
       .history-inner-items_item__year:nth-child(odd) {
         text-align: right;
-        border: 1px solid green; }
+        border: 1px solid green;
+        color: green; }
     .history-inner-items_item__text {
       color: #b7b7b7;
       font-size: 15px;
@@ -116,7 +120,7 @@ html, body {
 /* ========== team ============= */
 .team-items {
   height: 750px;
-  width: 1920px;
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
@@ -138,67 +142,35 @@ html, body {
 
 .team-items-flex {
   display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.team-items-flex__pers {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 1920px; }
-  .team-items-flex__1 {
-    margin: 100px 200px 0 0; }
-    .team-items-flex__1__foto {
-      text-align: center; }
-    .team-items-flex__1__name {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 26px;
-      color: #464646; }
-    .team-items-flex__1__text {
-      text-align: center;
-      font-size: 13px;
-      font-weight: 26px;
-      color: #b3b3b3; }
-    .team-items-flex__1__connect {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px; }
-      .team-items-flex__1__connect__inst {
-        padding-left: 15px; }
-  .team-items-flex__2 {
-    align-self: baseline; }
-    .team-items-flex__2__name {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 26px;
-      color: #464646; }
-    .team-items-flex__2__text {
-      text-align: center;
-      font-size: 13px;
-      font-weight: 26px;
-      color: #b3b3b3; }
-    .team-items-flex__2__connect {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px; }
-      .team-items-flex__2__connect__inst {
-        padding-left: 15px; }
-  .team-items-flex__3 {
-    margin: 100px 0 0 200px; }
-    .team-items-flex__3__name {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 26px;
-      color: #464646; }
-    .team-items-flex__3__text {
-      text-align: center;
-      font-size: 13px;
-      font-weight: 26px;
-      color: #b3b3b3; }
-    .team-items-flex__3__connect {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px; }
-      .team-items-flex__3__connect__inst {
-        padding-left: 15px; }
+  width: 350px; }
+  .team-items-flex__pers:nth-child(odd) {
+    margin-top: 350px; }
+  .team-items-flex__pers__foto {
+    text-align: center; }
+  .team-items-flex__pers__name {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 26px;
+    color: #464646; }
+  .team-items-flex__pers__text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 26px;
+    color: #b3b3b3; }
+  .team-items-flex__pers__connect {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    .team-items-flex__pers__connect__inst {
+      padding-left: 15px; }
 
 /* ========== / team ============= */
 /* ========== provid ============= */
