@@ -441,70 +441,6 @@ margin-bottom: 120px;
 
 /* ========== feedback ============== */
 
-/* Для формы обратной связи 
-.feedback_form {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    width: 1920px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 26px;
-
-   
-    &-input {
-      
-        padding: 10px 0 10px 0;
-        width: 1920px;
-        border: 1px solid #898888;
-
-        input {
-            border: none;
-            text-align: center;
-            padding: 10px 0 10px 0;
-            width: 1920px;
-            outline: none;
-        }
-
-        input::placeholder 
-        {
-            color: #898888;
-        }
-    
-        &-description {
-        
-        }
-        &-btn {
-            button {
-            background-color: black;
-            color: white;
-            border: none;
-            text-align: center;
-            padding: 10px 0 10px 0;
-            width: 1920px;
-            outline: none;
-            font-size: 15px;
-            font-weight: 26px;
-            
-                &:hover {
-                    background-color: #898888;
-                }
-            }
-        }
-       
-    }
-}
-.feedback_form-input-copyright {
-    padding-top: 30px;
-    width: 1920px;
-    @include subtitle();
-    text-align: center;
-}
-
-Для формы обратной связи */
-
 .feedback_form {
     margin-left: auto;
     margin-right: auto;
@@ -520,8 +456,13 @@ margin-bottom: 120px;
     &-input {
       
         padding: 10px 0 10px 0;
+        
         width: 100%;
         border: 1px solid #898888;
+
+    &:nth-child(-n+2) {
+    margin-bottom: 20px;
+}
 
         input {
             border: none;
