@@ -178,10 +178,10 @@ html, body {
   background-image: url(/img/bgr_provid.png);
   background-repeat: no-repeat;
   height: 1800px;
-  max-width: 1920px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1920px; }
+  width: 100%; }
 
 .provid_title {
   text-align: center;
@@ -199,29 +199,29 @@ html, body {
 
 .provid_flex {
   padding-top: 200px;
-  width: 1920px;
+  width: 100%;
   display: flex;
   justify-content: center; }
-  .provid_flex_items-1 {
+  .provid_flex_items {
     width: 340px;
     text-align: center; }
-    .provid_flex_items-1-cover {
+    .provid_flex_items-cover {
       display: flex;
       justify-content: center; }
-      .provid_flex_items-1-cover-circle {
+      .provid_flex_items-cover-circle {
         height: 130px;
         width: 130px;
         border: 6px solid white;
         border-radius: 50%; }
-      .provid_flex_items-1-cover-logo {
+      .provid_flex_items-cover-logo {
         text-align: center;
         padding-top: 40px; }
-    .provid_flex_items-1-title {
+    .provid_flex_items-title {
       color: white;
       font-size: 26px;
       font-weight: 26px;
       padding-top: 20px; }
-    .provid_flex_items-1-text {
+    .provid_flex_items-text {
       font-size: 18px;
       font-weight: 23px;
       color: #383838;
@@ -245,7 +245,7 @@ html, body {
 /* ========== / provid ============= */
 /* ========== contact ==============*/
 .contact {
-  width: 1920px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
@@ -353,7 +353,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
-  width: 1920px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,13 +361,13 @@ html, body {
   font-weight: 26px; }
   .feedback_form-input {
     padding: 10px 0 10px 0;
-    width: 1920px;
+    width: 100%;
     border: 1px solid #898888; }
     .feedback_form-input input {
       border: none;
       text-align: center;
       padding: 10px 0 10px 0;
-      width: 1920px;
+      width: 100%;
       outline: none; }
     .feedback_form-input input::placeholder {
       color: #898888; }
@@ -377,7 +377,7 @@ html, body {
       border: none;
       text-align: center;
       padding: 10px 0 10px 0;
-      width: 1920px;
+      width: 100%;
       outline: none;
       font-size: 15px;
       font-weight: 26px; }
@@ -386,7 +386,7 @@ html, body {
 
 .feedback_form-input-copyright {
   padding-top: 30px;
-  width: 1920px;
+  width: 100%;
   font-size: 16px;
   font-weight: 17px;
   color: #898888;

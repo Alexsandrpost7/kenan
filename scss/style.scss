@@ -294,10 +294,10 @@ margin-bottom: 120px;
     background-image: url(/img/bgr_provid.png);
     background-repeat: no-repeat;
     height: 1800px;
-    max-width: 1920px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
+    width: 100%;
 
 }
 
@@ -318,12 +318,12 @@ margin-bottom: 120px;
 
 .provid_flex {
    padding-top: 200px;
-    width: 1920px;    
+    width: 100%;    
     display: flex;
     justify-content: center;
     
 
-        &_items-1 {
+        &_items {
             width: 340px;
             text-align: center; 
 
@@ -388,7 +388,7 @@ margin-bottom: 120px;
 
 /* ========== contact ==============*/
 .contact {
-    width: 1920px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -506,7 +506,7 @@ margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
-    width: 1920px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -517,14 +517,14 @@ margin-bottom: 120px;
     &-input {
       
         padding: 10px 0 10px 0;
-        width: 1920px;
+        width: 100%;
         border: 1px solid #898888;
 
         input {
             border: none;
             text-align: center;
             padding: 10px 0 10px 0;
-            width: 1920px;
+            width: 100%;
             outline: none;
         }
 
@@ -543,7 +543,7 @@ margin-bottom: 120px;
             border: none;
             text-align: center;
             padding: 10px 0 10px 0;
-            width: 1920px;
+            width: 100%;
             outline: none;
             font-size: 15px;
             font-weight: 26px;
@@ -558,7 +558,7 @@ margin-bottom: 120px;
 }
 .feedback_form-input-copyright {
     padding-top: 30px;
-    width: 1920px;
+    width: 100%;
     @include subtitle();
     text-align: center;
 }
