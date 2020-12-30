@@ -58,28 +58,24 @@ html, body {padding:0; margin:0;}
 /* ========= header =============*/
 .section-header__nav {
     position: fixed;
-    transform: translateX(50%);
     background-color: white;
+    width: 100%;   
+    z-index: 5;
         &-inners {
 
             display: flex;
             justify-content: center;
             list-style: none;
-
-            /* Почему появились отступы? Если уже обнулили .section-wrapper */
-
             margin: 0px;
+            margin-left: -22px;
 
-            height: 60px;
-            float: none;
-            overflow: hidden;
                 li {
 
                     align-self: center;
-&:nth-child(2n) {
-    background-color: green;
-  margin: 0 20px 0 20px;
-}
+
+                    &:nth-child(2n) {
+                        margin: 0 20px 0 20px;
+                    }
                     a {
                             @include text_grey_litl();
                             text-decoration: none;
@@ -97,8 +93,10 @@ html, body {padding:0; margin:0;}
                 }
         }    
 }
-//////////////   
-/* 
+
+.header-inner {
+        margin-bottom: 200px;
+
         &__text {
             display: flex;
             align-items: center;
@@ -130,7 +128,7 @@ html, body {padding:0; margin:0;}
                   &:hover {
                       color: white;
                       background-color: black;
-                      transition-duration: 2s;
+                      transition-duration: 0.4s;
                      
                   }
                   
@@ -140,23 +138,20 @@ html, body {padding:0; margin:0;}
     
  
 
-*/
+}
 /* ========= / header =============*/
 
 /* ========== history ============= */
-.line {
-border-left: 5px solid white;  
-margin-left: 200px; 
+// .line {
+// border-left: 5px solid white;  
+// margin-left: 200px; 
 
-}
+// }
 
-.history {
-    
+.history-inner {
 
-&-inner {
     display: flex;
     justify-content: center;
-    flex-basis: 500px;
     margin-left: auto;
     margin-right: auto;
 
@@ -165,78 +160,59 @@ margin-left: 200px;
     background-image: url(/img/bgr_white.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 800px;
-    width: 1920px;
+    height: 950px;
+    width: 100%;
+    z-index: 15;
+   
     
-    &-nechet {
-        width: 400px;
-        padding-top: 30px;
-        padding-right: 75px;
+    
+    &-items {
         border-right: 5px solid white; 
-        position: relative; 
-        z-index: 5;
-        
+        width: 450px;
+        padding-top: 30px;
 
-        &__2011 {
-            height: 300px;
-
-            &__year {
-                text-align: right;
-                color: white;
-                font-size: 48px;
-                font-weight: 26px;
-
-            }
-            &__text {
-               @include text_grey();
-
-            }
-            &__circle {
-                width: 1em;
-                height: 1em;
-                border: 3px solid white;
-                border-radius: 50%;
-                position: absolute;
-                margin-top: -85px;
-                margin-left: 466px;
-                z-index: 1;
-                background: black;
-            }
+        &:nth-child(even) {
+            margin-left: 450px;
+            padding-left: 100px;
         }
+        &:nth-child(odd) {
+            margin-right: 450px;
+            padding-right: 50px;
+        }
+
+                &_item {
+                    &__year {
+                        @include title_black()
+                        color: white;
+                        &:nth-child(even) {
+                        }
+                        &:nth-child(odd) {
+                            text-align: right;
+                            border: 1px solid green
+                        }
+
+                    }
+                    &__text {
+                    @include text_grey();
+
+                    }
+                    &__circle {
+                        width: 1em;
+                        height: 1em;
+                        border: 3px solid white;
+                        border-radius: 50%;
+                        z-index: 10;
+                        background: black;
+                        &:nth-child(even) {
+                            margin-left: 50px;
+                        }
+                        &:nth-child(odd) {
+                            border: 1px solid green;
+                        }
+                }
+            }
         
     }
-
-    &-chet {
-        width: 400px;
-        padding-top: 150px;
-        padding-left: 75px;
-        z-index: 5;
-        &__2012 {
-            height: 300px;
-            &__year {
-                color: white;
-                font-size: 48px;
-                font-weight: 26px;
-            }
-            &__text {
-               @include text_grey();
-
-            }
-            &__circle {
-                width: 1em;
-                height: 1em;
-                border: 3px solid white;
-                border-radius: 50%;
-                position: absolute;
-                margin-top: -85px;
-                margin-left: -87px;
-                z-index: 1;
-                background: black;
-            }
-        }
-       
-    }
-}
 }
 /* ========== / history ============= */
 

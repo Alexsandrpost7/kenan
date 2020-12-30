@@ -9,21 +9,18 @@ html, body {
 /* ========= header =============*/
 .section-header__nav {
   position: fixed;
-  transform: translateX(50%);
-  background-color: white; }
+  background-color: white;
+  width: 100%;
+  z-index: 5; }
   .section-header__nav-inners {
     display: flex;
     justify-content: center;
     list-style: none;
-    /* Почему появились отступы? Если уже обнулили .section-wrapper */
     margin: 0px;
-    height: 60px;
-    float: none;
-    overflow: hidden; }
+    margin-left: -22px; }
     .section-header__nav-inners li {
       align-self: center; }
       .section-header__nav-inners li:nth-child(2n) {
-        background-color: green;
         margin: 0 20px 0 20px; }
       .section-header__nav-inners li a {
         color: #989696;
@@ -36,59 +33,39 @@ html, body {
         .section-header__nav-inners li a:active {
           color: red; }
 
-/* 
-        &__text {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding-top: 270px;
-            justify-content: center;
-        
-        }
+.header-inner {
+  margin-bottom: 200px; }
+  .header-inner__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 270px;
+    justify-content: center; }
+  .header-inner__title {
+    font-size: 44px;
+    font-weight: 17px;
+    color: #1d1e1f;
+    font-family: 'Open Sans', sans-serif; }
+  .header-inner__subtitle {
+    font-size: 16px;
+    font-weight: 17px;
+    color: #898888;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px; }
+  .header-inner__button__text button {
+    height: 40px;
+    width: 180px;
+    background-color: white; }
+    .header-inner__button__text button:hover {
+      color: white;
+      background-color: black;
+      transition-duration: 0.4s; }
 
-        &__title {
-           @include title_black();
-        }
-
-        &__subtitle {
-            @include subtitle();
-
-            padding-bottom: 50px;
-        }
-
-        &__button {
-
-            &__text {
-
-                button {
-                  height: 40px;  
-                  width: 180px;
-                  background-color: white;
-
-                  &:hover {
-                      color: white;
-                      background-color: black;
-                      transition-duration: 2s;
-                     
-                  }
-                  
-                }
-            }
-        }
-    
- 
-
-*/
 /* ========= / header =============*/
 /* ========== history ============= */
-.line {
-  border-left: 5px solid white;
-  margin-left: 200px; }
-
 .history-inner {
   display: flex;
   justify-content: center;
-  flex-basis: 500px;
   margin-left: auto;
   margin-right: auto;
   flex-direction: row;
@@ -96,63 +73,44 @@ html, body {
   background-image: url(/img/bgr_white.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 800px;
-  width: 1920px; }
-  .history-inner-nechet {
-    width: 400px;
-    padding-top: 30px;
-    padding-right: 75px;
+  height: 950px;
+  width: 100%;
+  z-index: 15; }
+  .history-inner-items {
     border-right: 5px solid white;
-    position: relative;
-    z-index: 5; }
-    .history-inner-nechet__2011 {
-      height: 300px; }
-      .history-inner-nechet__2011__year {
+    width: 450px;
+    padding-top: 30px; }
+    .history-inner-items:nth-child(even) {
+      margin-left: 450px;
+      padding-left: 100px; }
+    .history-inner-items:nth-child(odd) {
+      margin-right: 450px;
+      padding-right: 50px; }
+    .history-inner-items_item__year {
+      font-size: 44px;
+      font-weight: 17px;
+      color: #1d1e1f;
+      font-family: 'Open Sans', sans-serif;
+      color: white; }
+      .history-inner-items_item__year:nth-child(odd) {
         text-align: right;
-        color: white;
-        font-size: 48px;
-        font-weight: 26px; }
-      .history-inner-nechet__2011__text {
-        color: #b7b7b7;
-        font-size: 15px;
-        font-weight: 22px;
-        font-family: 'Open Sans', sans-serif; }
-      .history-inner-nechet__2011__circle {
-        width: 1em;
-        height: 1em;
-        border: 3px solid white;
-        border-radius: 50%;
-        position: absolute;
-        margin-top: -85px;
-        margin-left: 466px;
-        z-index: 1;
-        background: black; }
-  .history-inner-chet {
-    width: 400px;
-    padding-top: 150px;
-    padding-left: 75px;
-    z-index: 5; }
-    .history-inner-chet__2012 {
-      height: 300px; }
-      .history-inner-chet__2012__year {
-        color: white;
-        font-size: 48px;
-        font-weight: 26px; }
-      .history-inner-chet__2012__text {
-        color: #b7b7b7;
-        font-size: 15px;
-        font-weight: 22px;
-        font-family: 'Open Sans', sans-serif; }
-      .history-inner-chet__2012__circle {
-        width: 1em;
-        height: 1em;
-        border: 3px solid white;
-        border-radius: 50%;
-        position: absolute;
-        margin-top: -85px;
-        margin-left: -87px;
-        z-index: 1;
-        background: black; }
+        border: 1px solid green; }
+    .history-inner-items_item__text {
+      color: #b7b7b7;
+      font-size: 15px;
+      font-weight: 22px;
+      font-family: 'Open Sans', sans-serif; }
+    .history-inner-items_item__circle {
+      width: 1em;
+      height: 1em;
+      border: 3px solid white;
+      border-radius: 50%;
+      z-index: 10;
+      background: black; }
+      .history-inner-items_item__circle:nth-child(even) {
+        margin-left: 50px; }
+      .history-inner-items_item__circle:nth-child(odd) {
+        border: 1px solid green; }
 
 /* ========== / history ============= */
 /* ========== team ============= */
