@@ -148,73 +148,119 @@ html, body {padding:0; margin:0;}
 
 // }
 
+.line {
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -2px;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.history {
+    background-color: black;
+    background-image: url(/img/bgr_white.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 950px;
+}
  .history-inner {
      display: flex;
      flex-direction: row;    
      justify-content: center;
      margin-left: auto;
      margin-right: auto;
-
-    
-    background-color: black;
-    background-image: url(/img/bgr_white.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 950px;
-    width: 100%;
-    z-index: 15;
+     position: relative;
     
     
     
     &-items {
-        border-right: 5px solid white; 
-        width: 450px;
         padding-top: 30px;
+        display: flex;
+        flex-direction: column;
 
         
         &_item {
-            // border: 2px solid yellow;
-            &:nth-child(even) {
-                margin-left: 450px;
-                padding-left: 100px;
-                border: 2px solid purple;
+            width: 50%;
+            position: relative;
+            box-sizing: border-box;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: black;
+                border: 5px solid white;
+                top: 19px;
+                left: 100%;
+                margin-left: -12px;
+                box-sizing: border-box;
             }
+
             &:nth-child(odd) {
-                margin-right: 450px;
-                padding-right: 50px;
-            }
-                    &__year {
-                        @include title_black()
-                        color: white;
-                        &:nth-child(even) {
-                            color: red;
-                        }
-                        &:nth-child(odd) {
-                            text-align: right;
-                            border: 1px solid green;
-                            color: green;
+                padding-right: 24px;
 
-                        }
-
-                    }
-                    &__text {
-                    @include text_grey();
-
-                    }
-                    &__circle {
-                        width: 1em;
-                        height: 1em;
-                        border: 3px solid white;
-                        border-radius: 50%;
-                        z-index: 10;
-                        background: black;
-                        &:nth-child(even) {
-                            margin-left: 50px;
-                        }
-                        &:nth-child(odd) {
-                            border: 1px solid green;
-                        }
+                .history-inner-items_item__year {
+                    text-align: right;
                 }
+            }
+
+            &:nth-child(even) {
+                margin-left: auto;
+                padding-left: 24px;
+
+                &:after {
+                    left: auto;
+                    right: 100%;
+                    margin-left: 0;
+                    margin-right: -12px;
+                }
+            }
+
+            // border: 2px solid yellow;
+            // &:nth-child(even) {
+            //     margin-left: 450px;
+            //     padding-left: 100px;
+            //     border: 2px solid purple;
+            // }
+            // &:nth-child(odd) {
+            //     margin-right: 450px;
+            //     padding-right: 50px;
+            // } 
+            &__year {
+                @include title_black()
+                color: white;
+                &:nth-child(even) {
+                    color: red;
+                }
+
+            }
+            &__text {
+            @include text_grey();
+
+            }
+            &__circle {
+                width: 1em;
+                height: 1em;
+                border: 3px solid white;
+                border-radius: 50%;
+                z-index: 10;
+                background: black;
+                &:nth-child(even) {
+                    margin-left: 50px;
+                }
+                &:nth-child(odd) {
+                    border: 1px solid green;
+                }
+        }
             }
         
     }

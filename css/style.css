@@ -62,58 +62,91 @@ html, body {
 
 /* ========= / header =============*/
 /* ========== history ============= */
+.line {
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -2px; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.history {
+  background-color: black;
+  background-image: url(/img/bgr_white.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 950px; }
+
 .history-inner {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
-  background-image: url(/img/bgr_white.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  height: 950px;
-  width: 100%;
-  z-index: 15; }
+  position: relative; }
   .history-inner-items {
-    border-right: 5px solid white;
-    width: 450px;
-    padding-top: 30px; }
-    .history-inner-items_item:nth-child(even) {
-      margin-left: 450px;
-      padding-left: 100px;
-      border: 2px solid purple; }
-    .history-inner-items_item:nth-child(odd) {
-      margin-right: 450px;
-      padding-right: 50px; }
-    .history-inner-items_item__year {
-      font-size: 44px;
-      font-weight: 17px;
-      color: #1d1e1f;
-      font-family: 'Open Sans', sans-serif;
-      color: white; }
-      .history-inner-items_item__year:nth-child(even) {
-        color: red; }
-      .history-inner-items_item__year:nth-child(odd) {
-        text-align: right;
-        border: 1px solid green;
-        color: green; }
-    .history-inner-items_item__text {
-      color: #b7b7b7;
-      font-size: 15px;
-      font-weight: 22px;
-      font-family: 'Open Sans', sans-serif; }
-    .history-inner-items_item__circle {
-      width: 1em;
-      height: 1em;
-      border: 3px solid white;
-      border-radius: 50%;
-      z-index: 10;
-      background: black; }
-      .history-inner-items_item__circle:nth-child(even) {
-        margin-left: 50px; }
-      .history-inner-items_item__circle:nth-child(odd) {
-        border: 1px solid green; }
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column; }
+    .history-inner-items_item {
+      width: 50%;
+      position: relative;
+      box-sizing: border-box; }
+      .history-inner-items_item:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: black;
+        border: 5px solid white;
+        top: 19px;
+        left: 100%;
+        margin-left: -12px;
+        box-sizing: border-box; }
+      .history-inner-items_item:nth-child(odd) {
+        padding-right: 24px; }
+        .history-inner-items_item:nth-child(odd) .history-inner-items_item__year {
+          text-align: right; }
+      .history-inner-items_item:nth-child(even) {
+        margin-left: auto;
+        padding-left: 24px; }
+        .history-inner-items_item:nth-child(even):after {
+          left: auto;
+          right: 100%;
+          margin-left: 0;
+          margin-right: -12px; }
+      .history-inner-items_item__year {
+        font-size: 44px;
+        font-weight: 17px;
+        color: #1d1e1f;
+        font-family: 'Open Sans', sans-serif;
+        color: white; }
+        .history-inner-items_item__year:nth-child(even) {
+          color: red; }
+      .history-inner-items_item__text {
+        color: #b7b7b7;
+        font-size: 15px;
+        font-weight: 22px;
+        font-family: 'Open Sans', sans-serif; }
+      .history-inner-items_item__circle {
+        width: 1em;
+        height: 1em;
+        border: 3px solid white;
+        border-radius: 50%;
+        z-index: 10;
+        background: black; }
+        .history-inner-items_item__circle:nth-child(even) {
+          margin-left: 50px; }
+        .history-inner-items_item__circle:nth-child(odd) {
+          border: 1px solid green; }
 
 /* ========== / history ============= */
 /* ========== team ============= */
